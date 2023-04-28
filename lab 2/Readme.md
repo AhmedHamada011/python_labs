@@ -1,31 +1,15 @@
 # lab2
 
 ## run instructions
+<ol>
+<li>install mysql connector using pip command</li>
+<code>pip install mysql-connector-python</code>
 
-- install mysql connector using pip command
-  `pip install mysql-connector-python`
+<li>add table structure in <code>db.sql</code> to database</li>
 
-- add table structure to database
+<li>add database configuration ( host, username, password,database ) to <code>config.py</code> file</li>
 
-  `
---
--- Table structure for table `employee`
---
+<li>run app.py</li>
+<code>python3 app.py</code>
 
-CREATE TABLE `employee` (
-  `id` int AUTO_INCREMENT,
-  `first_name` varchar(255) NOT NULL,
-  `last_name` varchar(255) NOT NULL,
-  `salary` float NOT NULL,
-  `age` int NOT NULL,
-  `department` varchar(255) NOT NULL,
-  `managed_department` varchar(255) DEFAULT NULL,
-   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
-  `
-
-
-- add database config to config.py file
-
-- run app.py
-  `python3 app.py`
+</ol>
